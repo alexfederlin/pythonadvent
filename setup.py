@@ -240,15 +240,28 @@ Setze `schlitten_bereit = True`. Prüfe mit `if schlitten_bereit:`, ob wir start
 """,
         "code": """# 🕯️ Tag 8: Systemcheck
 
-# True (Wahr) und False (Falsch) schreibt man groß.
-
+# In der Programmierung gibt es "Wahr" (True) und "Falsch" (False).
+# Das nennt man "Boolean".
 schlitten_bereit = True
 
-# Prüfe die Variable:
-if schlitten_bereit:
-    print("Motoren starten!")
-else:
-    print("Warten auf Wartung...")
+# HIER LERNST DU WAS NEUES:
+# Eine if-Abfrage prüft IMMER, ob etwas "Wahr" ist.
+#
+# Man könnte schreiben: if schlitten_bereit == True:
+# Aber Profis schreiben einfach: if schlitten_bereit:
+#
+# Warum? Weil "schlitten_bereit" ja schon entweder True oder False ist!
+# Das ist wie zu sagen: "Wenn es regnet..." statt "Wenn es regnet wahr ist..."
+
+# Deine Aufgabe:
+# Schreibe die if-Abfrage in der Kurzform.
+# Wenn bereit -> "Motoren starten!"
+# Sonst -> "Warten auf Wartung..."
+
+# if ...:
+    # ...
+# else:
+    # ...
 """
     },
     9: {

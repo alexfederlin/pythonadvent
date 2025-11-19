@@ -38,7 +38,7 @@ Auf der Seite siehst du einen grünen Knopf mit der Aufschrift **<> Code**.
 #### 3. Deinen ersten Auftrag finden
 Wenn alles geladen ist, siehst du links eine Liste mit Ordnern.
 1.  Suche den Ordner **`01_Dezember`** und klicke darauf.
-2.  Klicke auf die Datei **`mission.md`**. Lies dir durch, was heute kaputt ist.
+2.  Klicke auf die Datei **`mission.md`**. Damit die schön angezeigt wird, drücke `Strg + Umschalttaste (⇑) + V`. Lies dir durch, was heute kaputt ist.
 3.  Öffne dann die Datei **`main.py`**. Hier schreibst du deinen Rettungs-Code!
 
 #### 4. Code ausführen

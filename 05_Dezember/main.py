@@ -8,4 +8,5 @@ print("System bereit für Eingabe...")
 
 # 2. Gib den gespeicherten Wunsch zur Bestätigung aus
 print("Du wünschst dir:")
-# print(wunsch)
+# gib hier wie an Tag 2 den Inhalt der Variable wunsch aus. 
+# Das machst du mit print(...)
