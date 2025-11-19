@@ -1,11 +1,12 @@
 # 🎅 Tag 6: Nikolaus Spezial
-# Zeichne mit print Befehlen ein Bild.
-# Tipp: Du brauchst mehrere print Befehle untereinander.
 
-# Beispiel für eine Spitze:
+# Aufgabe: Zeichne ein Bild mit print Befehlen.
+# Du brauchst mehrere print Befehle untereinander.
+
+# Kleines Beispiel für eine Spitze:
 # print("   * ")
 # print("  / \  ")
 
-# Jetzt du:
+# Jetzt bist du dran - tob dich aus!
 
 

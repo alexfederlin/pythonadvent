@@ -3,11 +3,16 @@ import time # Wir holen uns die Zeit-Funktion
 
 print("Countdown gestartet!")
 
-# range(start, stop, schritt)
-# -1 bedeutet: wir zählen rückwärts
-for zahl in range(10, 0, -1):
-    print(zahl)
-    # Hier 1 Sekunde warten:
-    # time.sleep(1)
+# Aufgabe:
+# Schreibe eine for-Schleife mit range().
+# Start: 10, Ende: 0, Schritt: -1 (rückwärts).
+# Nenne die Zähl-Variable z.B. 'zahl'.
+# (Erinnerung an Tag 15: for zahl in ...:)
+
+# for ... 
+    # 1. Gib die Zahl aus
+    
+    # 2. Warte eine Sekunde mit time.sleep(1)
+
 
 print("WROOOOM! Start!")

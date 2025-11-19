@@ -1,11 +1,12 @@
 # 🕯️ Tag 8: Systemcheck
 
-# True (Wahr) und False (Falsch) schreibt man groß.
+# 1. Erstelle eine Variable 'schlitten_bereit' und setze sie auf True.
+#    Achtung: True schreibt man groß!
 
-schlitten_bereit = True
 
-# Prüfe die Variable:
-if schlitten_bereit:
-    print("Motoren starten!")
-else:
-    print("Warten auf Wartung...")
+# 2. Schreibe eine if-Abfrage, die prüft ob der Schlitten bereit ist.
+#    Profi-Tipp: Du brauchst kein "== True". Schreib einfach: if schlitten_bereit:
+
+    # Wenn bereit: Gib "Motoren starten!" aus.
+
+    # Sonst (else): Gib "Warten..." aus.

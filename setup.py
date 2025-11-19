@@ -18,17 +18,20 @@ Hier spricht Oberelf Alabaster. Wir haben ein RIESIGES Problem. Der digitale Wec
 Deine Aufgabe:
 Repariere den Weck-Code. Wir müssen einen Text auf den Bildschirm schreiben, um ihn zu wecken.
 
-Der Befehl dafür ist `print("Dein Text")`.
+**Erklärung:**
+Der Befehl `print(...)` ist wie ein Drucker. Er schreibt das, was in den Klammern steht, auf den Bildschirm.
+Damit der Computer weiß, wo der Text anfängt und aufhört, müssen wir ihn in Anführungszeichen `"..."` packen.
 
 **Ziel:**
 Schreibe ein Programm, das "Hallo Weihnachtsmann! Aufwachen!" ausgibt.
 """,
         "code": """# 🎄 Tag 1: Der Weckruf
-# Wir brauchen den Befehl print(), um Text anzuzeigen.
-# Text muss immer in Anführungszeichen stehen: "Text"
 
-# Schreibe hier deinen Code:
-print("Hallo ...") 
+# Wir brauchen den Befehl print(), um Text anzuzeigen.
+# Denke daran: Text muss immer in Anführungszeichen "..." stehen.
+
+# Aufgabe: Schreibe einen print-Befehl, der "Hallo Weihnachtsmann! Aufwachen!" ausgibt.
+
 """
     },
     2: {
@@ -41,7 +44,13 @@ print("Hallo ...")
 Guten Morgen! Der Chef ist wach (danke dir!), aber jetzt herrscht Chaos in der Umkleide. Die digitalen Namensschilder der Elfen sind gelöscht.
 
 Deine Aufgabe:
-Wir müssen Namen in sogenannten "Variablen" speichern. Eine Variable ist wie eine Kiste, auf der ein Etikett klebt.
+Wir müssen Namen in sogenannten "Variablen" speichern.
+
+**Erklärung:**
+Stell dir eine Variable wie einen Karton vor.
+1. Du schreibst einen Namen auf den Karton (z.B. `elfen_name`).
+2. Du legst einen Inhalt hinein (z.B. `"Alabaster"`).
+3. Das Gleichzeichen `=` packt den Inhalt in den Karton.
 
 Beispiel:
 `name = "Alabaster"`
@@ -51,12 +60,15 @@ Erstelle eine Variable `elfen_name`, speichere einen Namen darin und gib ihn mit
 """,
         "code": """# 🕯️ Tag 2: Das Namensschild
 
-# 1. Erstelle eine Variable mit dem Namen 'elfen_name'
-# und weise ihr einen Namen in Anführungszeichen zu (z.B. "Glitzer").
-# elfen_name = "..."
+# 1. Erstelle eine Variable mit dem Namen 'elfen_name'.
+#    Speichere darin einen Namen (in Anführungszeichen, z.B. "Glitzer").
+#    Tipp: variable = "Wert"
 
-# 2. Gib die Variable aus. Wichtig: Hier KEINE Anführungszeichen beim print benutzen!
-# print(...)
+
+# 2. Gib den Inhalt der Variable auf dem Bildschirm aus.
+#    Nutze dafür den print() Befehl mit dem Variablennamen.
+#    WICHTIG: Hier KEINE Anführungszeichen, sonst druckt er nur das Wort "elfen_name" statt des Inhalts!
+
 """
     },
     3: {
@@ -69,10 +81,12 @@ Erstelle eine Variable `elfen_name`, speichere einen Namen darin und gib ihn mit
 Gut gemacht mit den Namen! Jetzt müssen wir zählen. Rudolph und Co. stehen im Stall, aber der Computer zeigt "0" an.
 
 Deine Aufgabe:
-Wir brauchen Variablen für Zahlen. Zahlen schreibt man OHNE Anführungszeichen.
+Wir brauchen Variablen für Zahlen (Integer).
 
-Beispiel:
-`anzahl = 5`
+**Erklärung:**
+Computer unterscheiden zwischen Text ("Strings") und Zahlen ("Integer").
+* Text braucht Gänsefüßchen: `"Hallo"`
+* Zahlen stehen nackt da: `5` (Wenn du `"5"` schreibst, denkt der Computer, es ist ein Wort und kann nicht damit rechnen!)
 
 **Ziel:**
 Erstelle eine Variable `rentiere` mit dem Wert 9 und eine Variable `geschenke` mit dem Wert 0. Gib beide Zahlen aus.
@@ -80,15 +94,16 @@ Erstelle eine Variable `rentiere` mit dem Wert 9 und eine Variable `geschenke` m
         "code": """# 🕯️ Tag 3: Bestandsaufnahme
 
 # Wir brauchen Zahlen (Integer).
-# Achtung: Zahlen schreibt man OHNE Gänsefüßchen!
+# Achtung: Zahlen schreibt man im Code OHNE Gänsefüßchen!
 
-# 1. Variable 'rentiere' auf 9 setzen
-
-
-# 2. Variable 'geschenke' auf 0 setzen
+# 1. Erstelle eine Variable 'rentiere' und setze sie auf 9.
 
 
-# 3. Gib beide Variablen mit print() aus
+# 2. Erstelle eine Variable 'geschenke' und setze sie auf 0.
+
+
+# 3. Gib beide Variablen mit print() aus.
+#    (Erinnerung an Tag 2: Variable in die Klammer, ohne Anführungszeichen)
 
 """
     },
@@ -118,12 +133,13 @@ Berechne `9 * 2` und gib das Ergebnis aus.
 rentiere = 9
 karotten_pro_tier = 2
 
-# Rechne die Gesamtmenge aus.
-# Du kannst direkt im print rechnen: print(5 * 5)
-# Oder eine neue Variable machen: gesamt = ... * ...
-
 print("Wir brauchen so viele Karotten:")
-# Hier rechnen:
+
+# Aufgabe:
+# Rechne die Gesamtmenge aus (Rentiere mal Karotten pro Tier).
+# Du kannst das Ergebnis direkt in den print-Befehl schreiben
+# ODER erst in einer neuen Variable 'gesamt' speichern und diese dann drucken.
+
 
 """
     },
@@ -136,11 +152,13 @@ print("Wir brauchen so viele Karotten:")
 
 Die Wunschzettel kommen rein! Aber unser System weiß nicht, was die Kinder wollen. Wir müssen das Programm interaktiv machen.
 
-Deine Aufgabe:
-Nutze `input()`, um dem Benutzer eine Frage zu stellen und die Antwort zu speichern.
+**Erklärung:**
+Bisher hat der Computer nur geredet (`print`). Jetzt soll er zuhören!
+Der Befehl `input()` hält das Programm an und wartet, bis der Mensch etwas tippt und ENTER drückt.
 
 Beispiel:
-`wunsch = input("Was wünschst du dir? ")`
+`antwort = input("Wie heißt du? ")`
+Hier wird die Frage angezeigt und das, was man tippt, landet in der Variable `antwort`.
 
 **Ziel:**
 Frage nach einem Wunsch und gib danach aus: "Gespeichert: [Wunsch]"
@@ -149,13 +167,14 @@ Frage nach einem Wunsch und gib danach aus: "Gespeichert: [Wunsch]"
 
 print("System bereit für Eingabe...")
 
-# 1. Nutze input(), um den User zu fragen und speichere es in der Variable 'wunsch'
-# wunsch = input("...hier Frage reinschreiben...")
+# 1. Nutze input(), um den User zu fragen und speichere das Ergebnis in der Variable 'wunsch'.
+#    Schreibe deine Frage als Text in die Klammern von input("...").
 
 
-# 2. Gib den gespeicherten Wunsch zur Bestätigung aus
+# 2. Gib den gespeicherten Wunsch zur Bestätigung aus.
 print("Du wünschst dir:")
-# print(wunsch)
+#    Gib hier (wie an Tag 2) den Inhalt der Variable 'wunsch' aus.
+
 """
     },
     6: {
@@ -176,14 +195,15 @@ Das nennt man ASCII Art.
 Zeichne etwas Weihnachtliches!
 """,
         "code": """# 🎅 Tag 6: Nikolaus Spezial
-# Zeichne mit print Befehlen ein Bild.
-# Tipp: Du brauchst mehrere print Befehle untereinander.
 
-# Beispiel für eine Spitze:
+# Aufgabe: Zeichne ein Bild mit print Befehlen.
+# Du brauchst mehrere print Befehle untereinander.
+
+# Kleines Beispiel für eine Spitze:
 # print("   * ")
 # print("  / \\  ")
 
-# Jetzt du:
+# Jetzt bist du dran - tob dich aus!
 
 
 """
@@ -197,15 +217,18 @@ Zeichne etwas Weihnachtliches!
 
 Wir müssen entscheiden, wer Geschenke bekommt. Dafür brauchen wir Logik!
 
-Deine Aufgabe:
-Nutze `if` (wenn) und `else` (sonst), um Entscheidungen zu treffen.
+**Erklärung:**
+Das Zauberwort heißt `if` (wenn). Damit kann der Computer Entscheidungen treffen.
+Wichtig sind zwei Dinge:
+1. Der Doppelpunkt `:` am Ende der Zeile.
+2. Das "Einrücken" (Lücke am Anfang der nächsten Zeile). Das zeigt dem Computer, was genau passieren soll, *wenn* die Bedingung stimmt.
 
 Beispiel:
 ```python
 if zahl > 5:
-    print("Groß")
+    print("Groß") # Das hier passiert nur, wenn zahl > 5 ist
 else:
-    print("Klein")
+    print("Klein") # Das passiert sonst
 ```
 
 **Ziel:**
@@ -213,13 +236,16 @@ Erstelle eine Variable `artigkeit`. Wenn sie größer als 5 ist, gib "Geschenk!"
 """,
         "code": """# 🕯️ Tag 7: Brav oder Frech?
 
-artigkeit = 8  # Probier mal verschiedene Zahlen aus (1 bis 10)
+artigkeit = 8  # Ändere diese Zahl später zum Testen (z.B. auf 2)
 
 # Schreibe hier die if-Abfrage:
-# if artigkeit > 5:
-    # print(...)  <- WICHTIG: Einrücken nicht vergessen! (Tab-Taste)
+# Prüfe: Ist artigkeit größer als (>) 5?
+
+    # Wenn ja: Gib "Geschenk!" aus (Denk an die Einrückung! Drücke die Tab-Taste)
+
 # else:
-    # print(...)
+
+    # Sonst: Gib "Kohle..." aus
 
 """
     },
@@ -230,38 +256,31 @@ artigkeit = 8  # Probier mal verschiedene Zahlen aus (1 bis 10)
 **Status:** 🛠️ Technisch  
 **Ort:** Werkstatt
 
-Bevor der Schlitten startet, müssen alle Lampen auf Grün stehen. In der Informatik gibt es dafür "Wahr" (`True`) und "Falsch" (`False`).
+Bevor der Schlitten startet, müssen alle Lampen auf Grün stehen.
 
-Deine Aufgabe:
-Erstelle einen Schalter für den Schlitten.
+**Erklärung:**
+In der Informatik gibt es einen Datentyp, der nur zwei Zustände kennt:
+* `True` (Wahr / An / Ja)
+* `False` (Falsch / Aus / Nein)
+
+Das nennt man "Boolean". Das Praktische ist: Eine `if`-Abfrage prüft *immer*, ob etwas `True` ist.
+Statt `if licht_an == True:` können Profis einfach `if licht_an:` schreiben.
 
 **Ziel:**
 Setze `schlitten_bereit = True`. Prüfe mit `if schlitten_bereit:`, ob wir starten können.
 """,
         "code": """# 🕯️ Tag 8: Systemcheck
 
-# In der Programmierung gibt es "Wahr" (True) und "Falsch" (False).
-# Das nennt man "Boolean".
-schlitten_bereit = True
+# 1. Erstelle eine Variable 'schlitten_bereit' und setze sie auf True.
+#    Achtung: True schreibt man groß!
 
-# HIER LERNST DU WAS NEUES:
-# Eine if-Abfrage prüft IMMER, ob etwas "Wahr" ist.
-#
-# Man könnte schreiben: if schlitten_bereit == True:
-# Aber Profis schreiben einfach: if schlitten_bereit:
-#
-# Warum? Weil "schlitten_bereit" ja schon entweder True oder False ist!
-# Das ist wie zu sagen: "Wenn es regnet..." statt "Wenn es regnet wahr ist..."
 
-# Deine Aufgabe:
-# Schreibe die if-Abfrage in der Kurzform.
-# Wenn bereit -> "Motoren starten!"
-# Sonst -> "Warten auf Wartung..."
+# 2. Schreibe eine if-Abfrage, die prüft ob der Schlitten bereit ist.
+#    Profi-Tipp: Du brauchst kein "== True". Schreib einfach: if schlitten_bereit:
 
-# if ...:
-    # ...
-# else:
-    # ...
+    # Wenn bereit: Gib "Motoren starten!" aus.
+
+    # Sonst (else): Gib "Warten..." aus.
 """
     },
     9: {
@@ -273,8 +292,14 @@ schlitten_bereit = True
 
 Die Geschenke purzeln durcheinander! Wir haben drei Kategorien: "Spielzeug", "Kleidung" und "Süßes".
 
-Deine Aufgabe:
-Nutze `elif` (else if - sonst wenn), um mehr als zwei Möglichkeiten zu prüfen.
+**Erklärung:**
+Wenn wir mehr als zwei Optionen haben (nicht nur Ja/Nein), reicht `if` und `else` nicht.
+Dafür gibt es `elif`. Das ist kurz für "else if" (sonst wenn).
+
+Der Computer prüft von oben nach unten:
+1. `if`... (Trifft das zu? Wenn ja, fertig.)
+2. `elif`... (Wenn das erste nicht zutraf: Trifft das hier zu?)
+3. `else`... (Wenn gar nichts zutraf.)
 
 **Ziel:**
 Erstelle eine Variable `typ`.
@@ -284,15 +309,18 @@ Sonst -> Ab in Sack 3.
 """,
         "code": """# 🕯️ Tag 9: Die Sortiermaschine
 
-typ = "Kleidung"  # Ändere das mal zu "Spielzeug" oder "Bonbon"
+typ = "Kleidung"  # Teste später auch "Spielzeug" oder "Bonbon"
 
 if typ == "Spielzeug":
     print("Kommt in den roten Sack.")
-# Hier elif einfügen:
-# elif typ == "Kleidung":
-    # ...
+
+# Aufgabe: Füge hier die Prüfung für "Kleidung" ein.
+# Nutze dafür den Befehl: elif ...:
+    # Gib dann aus "Kommt in den blauen Sack."
+
+
 else:
-    print("Kommt in den blauen Sack.")
+    print("Kommt in den Rest-Sack.")
 """
     },
     10: {
@@ -304,8 +332,15 @@ else:
 
 Oh nein! Die Adressaufkleber sind zu klein geschrieben. Die alten Elfen können das nicht lesen.
 
-Deine Aufgabe:
-Wandle Text in Großbuchstaben um. Dafür haben Text-Variablen eine eingebaute Funktion (Methode) namens `.upper()`.
+**Erklärung:**
+Python gibt uns Werkzeuge für Text (Strings).
+Diese Werkzeuge hängen wir mit einem Punkt `.` an die Variable an.
+`.upper()` macht alles GROSS.
+`.lower()` macht alles klein.
+
+Beispiel:
+`name = "Tim"`
+`grosser_name = name.upper()` -> "TIM"
 
 **Ziel:**
 Frage den Nutzer nach einem Wort und gib es in GROSSBUCHSTABEN wieder aus.
@@ -314,10 +349,13 @@ Frage den Nutzer nach einem Wort und gib es in GROSSBUCHSTABEN wieder aus.
 
 wort = input("Gib ein Wort ein: ")
 
-# Nutze .upper() um es groß zu machen
-# gross = wort.upper()
+# Aufgabe:
+# 1. Wende .upper() auf die Variable 'wort' an.
+# 2. Speichere das Ergebnis in einer neuen Variable (z.B. 'gross').
 
-print(gross)
+
+# 3. Gib die neue Variable aus.
+
 """
     },
     11: {
@@ -329,7 +367,14 @@ print(gross)
 
 Wir müssen schöne Sätze auf die Pakete drucken. Wir wollen Variablen direkt in den Text einbauen.
 
-Das geht mit dem f-String: `f"Hallo {name}"`.
+**Erklärung:**
+Das ist ein super wichtiges Werkzeug: Der **f-String**.
+Das `f` steht für "format". Es erlaubt uns, Variablen direkt in einen Satz zu schmuggeln, indem wir sie in geschweifte Klammern `{}` setzen.
+
+Ohne f-String (umständlich): `print("Hallo " + name)`
+Mit f-String (cool): `print(f"Hallo {name}")`
+
+Vergiss das kleine `f` vor den Gänsefüßchen nicht!
 
 **Ziel:**
 Definiere `name` und `stadt`. Gib den Satz aus: "Das Paket für [name] geht nach [stadt]."
@@ -339,8 +384,12 @@ Definiere `name` und `stadt`. Gib den Satz aus: "Das Paket für [name] geht nach
 name = "Lena"
 stadt = "Berlin"
 
-# Baue den Satz mit einem f-String (achte auf das f vor den Gänsefüßchen!)
-satz = f"Das Paket für {name} geht nach ..."
+# Aufgabe:
+# Baue den Satz "Das Paket für ... geht nach ..." mit einem f-String.
+# 1. Schreibe ein f vor den String: f"..."
+# 2. Setze die Variablen name und stadt in geschweifte Klammern {} an die richtige Stelle.
+
+satz = ...
 
 print(satz)
 """
@@ -361,8 +410,11 @@ Sei ein Detektiv. Finde die 3 Fehler im Code und bringe ihn zum Laufen.
 Das Programm muss fehlerfrei "Geschenke sind verpackt!" ausgeben.
 """,
         "code": """# 🕯️ Tag 12: Bugfixing
-# Hier sind 3 Fehler versteckt. Finde sie!
-# Achte auf Klammern, Gänsefüßchen und Doppelpunkte.
+# Hier sind 3 Fehler versteckt.
+# Achte genau auf:
+# - Klammern ()
+# - Anführungszeichen "
+# - Doppelpunkte : bei if-Abfragen (Erinnerst du dich an Tag 7?)
 
 status = "fertig"
 
@@ -379,20 +431,29 @@ else:
 **Status:** 📋 Leer  
 **Ort:** Lagerhalle
 
-Willkommen in Woche 3! Wir brauchen mehr Ordnung. Einzelne Variablen reichen nicht mehr, wir brauchen Listen.
+Willkommen in Woche 3! Wir brauchen mehr Ordnung. Einzelne Variablen reichen nicht mehr.
 
-Eine Liste schreibt man mit eckigen Klammern: `["A", "B", "C"]`.
+**Erklärung:**
+Eine **Liste** ist eine Variable, die mehrere Dinge gleichzeitig speichern kann.
+Man erkennt sie an den **eckigen Klammern** `[]`.
+
+Beispiel:
+`einkaufsliste = ["Milch", "Eier", "Mehl"]`
 
 **Ziel:**
 Erstelle eine Liste namens `sack` mit 3 Geschenken darin. Gib die ganze Liste aus.
 """,
         "code": """# 🕯️ Tag 13: Listen erstellen
 
-# Erstelle eine Liste mit eckigen Klammern []
-# sack = ["...", "...", "..."]
+# Aufgabe:
+# 1. Erstelle eine Liste 'sack'.
+# 2. Schreibe 3 Geschenke (als Text in Anführungszeichen) hinein, getrennt mit Kommas.
+#    Tipp: sack = ["...", "...", "..."]
+
 
 print("Im Sack ist:")
-print(sack)
+# 3. Gib die Liste aus (einfach print(sack) )
+
 """
     },
     14: {
@@ -404,8 +465,11 @@ print(sack)
 
 Halt! Stopp! Ein Kind hat seinen Wunschzettel geändert. Wir müssen noch etwas in den Sack packen.
 
-Deine Aufgabe:
-Füge ein Element zu einer bestehenden Liste hinzu. Der Befehl ist `.append("Neues Ding")`.
+**Erklärung:**
+Listen sind veränderbar! Mit dem Befehl `.append()` (anhängen) können wir etwas Neues ans Ende der Liste kleben.
+
+Beispiel:
+`liste.append("Neues")`
 
 **Ziel:**
 Füge "Fahrrad" zu deiner Liste hinzu und gib sie erneut aus.
@@ -413,10 +477,14 @@ Füge "Fahrrad" zu deiner Liste hinzu und gib sie erneut aus.
         "code": """# 🕯️ Tag 14: Etwas hinzufügen
 
 sack = ["Ball", "Puppe"]
+
+# (Erinnerung an Tag 11: Das hier unten ist ein f-String mit den {} Klammern!)
 print(f"Vorher: {sack}")
 
-# Füge 'Fahrrad' hinzu:
-# sack.append(...)
+# Aufgabe:
+# Nutze den Befehl .append(...), um "Fahrrad" in den Sack zu packen.
+# Der Befehl gehört zur Variable: sack.append(...)
+
 
 print(f"Nachher: {sack}")
 """
@@ -430,13 +498,14 @@ print(f"Nachher: {sack}")
 
 Der Sack ist zu schwer, um ihn auf einmal hochzuheben. Wir müssen jedes Geschenk einzeln scannen und verladen.
 
-Deine Aufgabe:
-Nutze eine `for`-Schleife, um jedes Element in der Liste einzeln anzuschauen.
+**Erklärung:**
+Die **For-Schleife** (Loop) ist eines der mächtigsten Werkzeuge. Sie geht eine Liste Element für Element durch.
 
 ```python
-for geschenk in sack:
-    print(geschenk)
+for ding in sack:
+    print(ding)
 ```
+Das bedeutet: "Nimm das erste Ding aus dem Sack, nenne es `ding`, und mach was damit. Dann nimm das nächste..."
 
 **Ziel:**
 Gib jedes Geschenk einzeln aus mit dem Text "Verladen: [Geschenk]".
@@ -447,9 +516,13 @@ sack = ["Auto", "Buch", "Kekse", "Socken"]
 
 print("Starte Verladung...")
 
-# Schreibe die for-Schleife:
-# for ding in sack:
-    # print(f"Verladen: {ding}")
+# Aufgabe: Schreibe eine for-Schleife.
+# Sie soll jedes 'ding' im 'sack' durchgehen.
+
+# for ... in ...:
+    # Gib in der Schleife aus: "Verladen: {ding}"
+    # (Erinnerung an Tag 11: Nutze dafür einen f-String!)
+    
 
 print("Alles drin!")
 """
@@ -462,25 +535,34 @@ print("Alles drin!")
 **Ort:** Startbahn
 
 Wir üben den Start! Dafür brauchen wir einen Countdown.
-Wir brauchen das Modul `time`, um den Computer warten zu lassen.
 
-Deine Aufgabe:
-Zähle von 10 rückwärts bis 0.
+**Erklärung:**
+Manchmal kann Python nicht alles alleine. Wir müssen ein "Modul" importieren.
+`import time` lädt Funktionen für die Uhrzeit.
+`time.sleep(1)` lässt den Computer für 1 Sekunde schlafen (warten).
+
+Außerdem nutzen wir `range(Start, Ende, Schritt)`.
+`range(10, 0, -1)` zählt von 10 bis 1 in Einerschritten rückwärts.
 
 **Ziel:**
-Nutze eine Schleife (Tipp: `range(10, 0, -1)`) und `time.sleep(1)`, um runterzuzählen.
+Nutze eine Schleife und `time.sleep(1)`, um runterzuzählen.
 """,
         "code": """# 🕯️ Tag 16: Countdown
 import time # Wir holen uns die Zeit-Funktion
 
 print("Countdown gestartet!")
 
-# range(start, stop, schritt)
-# -1 bedeutet: wir zählen rückwärts
-for zahl in range(10, 0, -1):
-    print(zahl)
-    # Hier 1 Sekunde warten:
-    # time.sleep(1)
+# Aufgabe:
+# Schreibe eine for-Schleife mit range().
+# Start: 10, Ende: 0, Schritt: -1 (rückwärts).
+# Nenne die Zähl-Variable z.B. 'zahl'.
+# (Erinnerung an Tag 15: for zahl in ...:)
+
+# for ... 
+    # 1. Gib die Zahl aus
+    
+    # 2. Warte eine Sekunde mit time.sleep(1)
+
 
 print("WROOOOM! Start!")
 """
@@ -495,8 +577,9 @@ print("WROOOOM! Start!")
 Mittagspause! Die Elfen machen eine Schneeballschlacht.
 Wir brauchen einen Zufallsgenerator, um zu sehen, wer getroffen wird (Elf 1 bis Elf 6).
 
-Deine Aufgabe:
-Importiere `random` und nutze `random.randint(1, 6)`.
+**Erklärung:**
+Wir brauchen wieder ein Modul: `import random` (Zufall).
+Der Befehl `random.randint(1, 6)` würfelt eine Zahl zwischen 1 und 6.
 
 **Ziel:**
 Simuliere einen Würfelwurf.
@@ -506,9 +589,12 @@ import random
 
 print("Schneeball fliegt...")
 
-# Erzeuge eine Zufallszahl zwischen 1 und 6
-treffer = random.randint(1, 6)
+# Aufgabe:
+# Erzeuge eine Zufallszahl zwischen 1 und 6 mit random.randint(..., ...)
+# Speichere sie in der Variable 'treffer'.
 
+
+# (Erinnerung an Tag 11: Hier benutzen wir wieder den f-String für die Ausgabe)
 print(f"Elf Nummer {treffer} wurde getroffen!")
 """
     },
@@ -522,8 +608,11 @@ print(f"Elf Nummer {treffer} wurde getroffen!")
 Der Weihnachtsmann muss zunehmen, damit der Anzug passt.
 Solange er Hunger hat, muss er essen.
 
-Deine Aufgabe:
-Nutze eine `while`-Schleife. Sie läuft, so lange eine Bedingung wahr ist.
+**Erklärung:**
+Die **While-Schleife** läuft nicht eine feste Anzahl mal (wie `for`), sondern **solange** eine Bedingung wahr ist.
+`while hunger > 0:` bedeutet: "Solange der Hunger größer als 0 ist, mach weiter..."
+
+WICHTIG: In der Schleife muss sich der Hunger ändern, sonst hört sie nie auf!
 
 **Ziel:**
 Setze `hunger = 5`. Solange `hunger > 0`: Iss einen Keks, ziehe 1 vom Hunger ab (`hunger = hunger - 1`).
@@ -532,10 +621,15 @@ Setze `hunger = 5`. Solange `hunger > 0`: Iss einen Keks, ziehe 1 vom Hunger ab 
 
 hunger = 5
 
-while hunger > 0:
+# Aufgabe: Schreibe den Kopf der while-Schleife.
+# Solange hunger größer als 0 ist...
+# while ...:
+
+    # (Erinnerung an Tag 11: f-String!)
     print(f"Habe noch Hunger ({hunger})... Mampf!")
-    # WICHTIG: Hunger muss weniger werden, sonst läuft die Schleife für immer!
-    # hunger = hunger - 1
+    
+    # WICHTIG: Ziehe hier 1 vom Hunger ab!
+    # hunger = ...
 
 print("Pappsatt!")
 """
@@ -547,24 +641,33 @@ print("Pappsatt!")
 **Status:** 🤖 Automatisierung  
 **Ort:** Werkstatt 2
 
-Wir haben eine neue Maschine! Sie verpackt Dinge automatisch. Aber wir müssen sie programmieren.
-Wenn wir Code oft brauchen, packen wir ihn in eine "Funktion".
+Wir haben eine neue Maschine! Sie verpackt Dinge automatisch.
+
+**Erklärung:**
+Wenn wir Code oft brauchen, packen wir ihn in eine **Funktion**. Das ist wie ein eigenes kleines Unterprogramm.
+Man erkennt es am Wort `def` (definieren).
+Was in den Klammern steht (z.B. `gegenstand`), ist der Input für die Maschine.
 
 **Ziel:**
 Definiere eine Funktion `verpacken(gegenstand)`, die den Gegenstand mit Sternchen umrahmt ausdruckt.
 """,
         "code": """# 🕯️ Tag 19: Funktionen definieren
 
-# Hier bauen wir die Maschine (die Funktion):
+# Hier bauen wir die Maschine (die Funktion).
+# Ergänze den Code in der Funktion.
+
 def verpacken(gegenstand):
     print("****")
-    print(f"*{gegenstand}*")
+    # Aufgabe: Gib den Gegenstand aus, am besten mit Sternchen davor und dahinter
+    # z.B. * Puppe *
+    # (Tipp: Nutze dafür wieder einen f-String: f"*{...}*")
+    
     print("****")
 
-# Hier benutzen wir die Maschine:
+# Hier testen wir die Maschine.
+# Rufe die Funktion auf mit verschiedenen Dingen.
 verpacken("Puppe")
-verpacken("Auto")
-# Verpacke noch etwas:
+# Rufe sie noch einmal auf mit "Auto":
 
 """
     },
@@ -576,10 +679,13 @@ verpacken("Auto")
 **Ort:** Laderampe
 
 Der Schlitten darf nicht überladen werden!
-Unsere Funktion muss uns das Gewicht zurückmelden, damit wir es zusammenrechnen können.
 
-Deine Aufgabe:
-Nutze `return`, um einen Wert aus der Funktion zurückzugeben.
+**Erklärung:**
+Bisher haben unsere Funktionen nur etwas gedruckt.
+Manchmal soll eine Funktion aber etwas **ausrechnen und zurückgeben**, damit wir mit dem Ergebnis weiterrechnen können.
+Dafür gibt es den Befehl `return` (zurückgeben).
+
+Wenn `return` kommt, ist die Funktion fertig und wirft das Ergebnis heraus.
 
 **Ziel:**
 Schreibe eine Funktion, die zwei Gewichte addiert und das Ergebnis zurückgibt.
@@ -588,9 +694,12 @@ Schreibe eine Funktion, die zwei Gewichte addiert und das Ergebnis zurückgibt.
 
 def wiegen(paket1, paket2):
     gesamt = paket1 + paket2
-    return gesamt  # Gib das Ergebnis zurück an das Hauptprogramm
+    # Aufgabe: Gib das Ergebnis 'gesamt' an das Hauptprogramm zurück.
+    # Nutze den Befehl: return ...
 
-# Wir rufen die Funktion auf und speichern das Ergebnis
+
+# Hier nutzen wir deine Funktion:
+# Wir speichern das, was zurück kommt (return), in der Variable 'gewicht'
 gewicht = wiegen(5, 10)
 
 print(f"Gesamtgewicht ist: {gewicht} kg")
@@ -603,23 +712,31 @@ print(f"Gesamtgewicht ist: {gewicht} kg")
 **Status:** 🗺️ Orientierung  
 **Ort:** Schlitten-Cockpit
 
-Listen sind gut, aber wir müssen wissen, WER WO steht. Dafür sind "Dictionaries" (Wörterbücher) perfekt.
-Sie funktionieren wie Schlüssel und Wert: `{"Key": "Value"}`.
+Listen (`[]`) sind gut für Aufzählungen. Aber wenn wir Dinge nachschlagen wollen, brauchen wir ein **Dictionary** (Wörterbuch).
+
+**Erklärung:**
+Ein Dictionary nutzt geschweifte Klammern `{}`.
+Es besteht immer aus Paaren: `Schlüssel : Wert`.
+`telefonbuch = {"Mama": "12345", "Papa": "67890"}`
+
+Wenn ich wissen will, welche Nummer Mama hat, frage ich: `telefonbuch["Mama"]`.
 
 **Ziel:**
 Erstelle ein Dictionary mit Rentier-Positionen: `{"Rudolph": "Vorne", "Dancer": "Mitte"}`.
 """,
         "code": """# 🕯️ Tag 21: Dictionaries
 
-# Geschweifte Klammern {} für Dictionaries
+# Das hier ist ein Dictionary (Wörterbuch) mit geschweiften Klammern {}:
 positionen = {
     "Rudolph": "Vorne",
     "Dancer": "Mitte",
     "Vixen": "Hinten"
 }
 
-# Wir greifen mit dem Namen (Key) auf den Wert zu:
-wo_ist_rudi = positionen["Rudolph"]
+# Aufgabe: Finde heraus, wo Rudolph steht.
+# Hole dir den Wert aus dem Dictionary, indem du den Namen ("Rudolph") in eckigen Klammern dahinter schreibst.
+
+# wo_ist_rudi = positionen[...]
 
 print(f"Rudolph steht: {wo_ist_rudi}")
 """
@@ -642,11 +759,15 @@ Wenn Schneesturm -> "Schneeketten anlegen!", Sonst -> "Abflugbereit!".
 import random
 
 wetter_code = random.randint(0, 1) # Zufall: 0 oder 1
-
+# (Erinnerung an Tag 11: f-String!)
 print(f"Wetter-Code ist: {wetter_code}")
 
-# Schreibe die If-Abfrage:
-# Wenn 1 dann Schneeketten, sonst Gute Reise
+# Aufgabe: Schreibe eine Logik für den Piloten.
+# 1. Wenn (if) wetter_code gleich 1 ist:
+#    Drucke "Achtung: Schneeketten anlegen!"
+
+# 2. Sonst (else):
+#    Drucke "Freie Fahrt! Abflugbereit."
 
 """
     },
@@ -670,13 +791,20 @@ geheimnis = "Zimtstern"
 eingabe = ""
 
 # != bedeutet "nicht gleich"
-while eingabe != geheimnis:
-    eingabe = input("Wie lautet das Passwort? ")
+
+# Aufgabe: Schreibe die while-Schleife.
+# Solange 'eingabe' NICHT GLEICH 'geheimnis' ist...
+# (Erinnerung an Tag 18: while ...:)
+
+# while ... != ...:
     
-    if eingabe == geheimnis:
-        print("Zugriff erlaubt! Tor öffnet sich.")
-    else:
-        print("Zugriff verweigert!")
+    # Frage den User nach dem Passwort (input) und speichere es in 'eingabe'
+    
+    # (Optional) Wenn du willst, kannst du prüfen:
+    # Wenn eingabe richtig -> "Offen!"
+    # Sonst -> "Falsch!"
+
+print("Zugriff erlaubt! Tor öffnet sich.")
 """
     },
     24: {
@@ -703,20 +831,19 @@ import time
 
 print("Systeme fahren hoch...")
 
-# 1. Input (Name)
-pilot = input("Pilot, nenne deinen Namen: ")
+# Aufgabe 1: Frage nach dem Namen des Piloten und speichere ihn in 'pilot' (input).
 
+
+# (Erinnerung an Tag 11: f-String für den Namen!)
 print(f"Hallo Captain {pilot}. Startsequenz eingeleitet.")
 
-# 2. Countdown (Loop)
-for i in range(3, 0, -1):
-    print(i)
-    time.sleep(1)
+# Aufgabe 2: Schreibe einen Countdown von 3 bis 1.
+# (Erinnerung an Tag 16: for ... in range(...): )
+# Vergiss nicht das time.sleep(1) zwischen den Zahlen!
 
-# 3. Start!
-print("🚀 WROOOOOM! Der Schlitten hebt ab!")
-print("✨ Frohe Weihnachten! ✨")
-print(f"Gute Reise, {pilot}!")
+
+# Aufgabe 3: Gib den finalen Start-Befehl und "Frohe Weihnachten" aus!
+
 """
     }
 }

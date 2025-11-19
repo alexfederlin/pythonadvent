@@ -3,10 +3,11 @@
 rentiere = 9
 karotten_pro_tier = 2
 
-# Rechne die Gesamtmenge aus.
-# Du kannst direkt im print rechnen: print(5 * 5)
-# Oder eine neue Variable machen: gesamt = ... * ...
-
 print("Wir brauchen so viele Karotten:")
-# Hier rechnen:
+
+# Aufgabe:
+# Rechne die Gesamtmenge aus (Rentiere mal Karotten pro Tier).
+# Du kannst das Ergebnis direkt in den print-Befehl schreiben
+# ODER erst in einer neuen Variable 'gesamt' speichern und diese dann drucken.
+
 

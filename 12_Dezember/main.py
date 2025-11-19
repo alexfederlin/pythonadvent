@@ -1,6 +1,9 @@
 # 🕯️ Tag 12: Bugfixing
-# Hier sind 3 Fehler versteckt. Finde sie!
-# Achte auf Klammern, Gänsefüßchen und Doppelpunkte.
+# Hier sind 3 Fehler versteckt.
+# Achte genau auf:
+# - Klammern ()
+# - Anführungszeichen "
+# - Doppelpunkte : bei if-Abfragen (Erinnerst du dich an Tag 7?)
 
 status = "fertig"
 

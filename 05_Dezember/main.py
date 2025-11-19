@@ -2,11 +2,11 @@
 
 print("System bereit für Eingabe...")
 
-# 1. Nutze input(), um den User zu fragen und speichere es in der Variable 'wunsch'
-# wunsch = input("...hier Frage reinschreiben...")
+# 1. Nutze input(), um den User zu fragen und speichere das Ergebnis in der Variable 'wunsch'.
+#    Schreibe deine Frage als Text in die Klammern von input("...").
 
 
-# 2. Gib den gespeicherten Wunsch zur Bestätigung aus
+# 2. Gib den gespeicherten Wunsch zur Bestätigung aus.
 print("Du wünschst dir:")
-# gib hier wie an Tag 2 den Inhalt der Variable wunsch aus. 
-# Das machst du mit print(...)
+#    Gib hier (wie an Tag 2) den Inhalt der Variable 'wunsch' aus.
+

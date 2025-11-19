@@ -1,11 +1,14 @@
 # 🕯️ Tag 9: Die Sortiermaschine
 
-typ = "Kleidung"  # Ändere das mal zu "Spielzeug" oder "Bonbon"
+typ = "Kleidung"  # Teste später auch "Spielzeug" oder "Bonbon"
 
 if typ == "Spielzeug":
     print("Kommt in den roten Sack.")
-# Hier elif einfügen:
-# elif typ == "Kleidung":
-    # ...
+
+# Aufgabe: Füge hier die Prüfung für "Kleidung" ein.
+# Nutze dafür den Befehl: elif ...:
+    # Gib dann aus "Kommt in den blauen Sack."
+
+
 else:
-    print("Kommt in den blauen Sack.")
+    print("Kommt in den Rest-Sack.")

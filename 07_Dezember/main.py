@@ -1,10 +1,13 @@
 # 🕯️ Tag 7: Brav oder Frech?
 
-artigkeit = 8  # Probier mal verschiedene Zahlen aus (1 bis 10)
+artigkeit = 8  # Ändere diese Zahl später zum Testen (z.B. auf 2)
 
 # Schreibe hier die if-Abfrage:
-# if artigkeit > 5:
-    # print(...)  <- WICHTIG: Einrücken nicht vergessen! (Tab-Taste)
+# Prüfe: Ist artigkeit größer als (>) 5?
+
+    # Wenn ja: Gib "Geschenk!" aus (Denk an die Einrückung! Drücke die Tab-Taste)
+
 # else:
-    # print(...)
+
+    # Sonst: Gib "Kohle..." aus
 

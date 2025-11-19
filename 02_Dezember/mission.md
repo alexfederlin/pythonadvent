@@ -6,7 +6,13 @@
 Guten Morgen! Der Chef ist wach (danke dir!), aber jetzt herrscht Chaos in der Umkleide. Die digitalen Namensschilder der Elfen sind gelöscht.
 
 Deine Aufgabe:
-Wir müssen Namen in sogenannten "Variablen" speichern. Eine Variable ist wie eine Kiste, auf der ein Etikett klebt.
+Wir müssen Namen in sogenannten "Variablen" speichern.
+
+**Erklärung:**
+Stell dir eine Variable wie einen Karton vor.
+1. Du schreibst einen Namen auf den Karton (z.B. `elfen_name`).
+2. Du legst einen Inhalt hinein (z.B. `"Alabaster"`).
+3. Das Gleichzeichen `=` packt den Inhalt in den Karton.
 
 Beispiel:
 `name = "Alabaster"`

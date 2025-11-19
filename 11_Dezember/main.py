@@ -3,7 +3,11 @@
 name = "Lena"
 stadt = "Berlin"
 
-# Baue den Satz mit einem f-String (achte auf das f vor den Gänsefüßchen!)
-satz = f"Das Paket für {name} geht nach ..."
+# Aufgabe:
+# Baue den Satz "Das Paket für ... geht nach ..." mit einem f-String.
+# 1. Schreibe ein f vor den String: f"..."
+# 2. Setze die Variablen name und stadt in geschweifte Klammern {} an die richtige Stelle.
+
+satz = ...
 
 print(satz)

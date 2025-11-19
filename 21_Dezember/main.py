@@ -1,13 +1,15 @@
 # 🕯️ Tag 21: Dictionaries
 
-# Geschweifte Klammern {} für Dictionaries
+# Das hier ist ein Dictionary (Wörterbuch) mit geschweiften Klammern {}:
 positionen = {
     "Rudolph": "Vorne",
     "Dancer": "Mitte",
     "Vixen": "Hinten"
 }
 
-# Wir greifen mit dem Namen (Key) auf den Wert zu:
-wo_ist_rudi = positionen["Rudolph"]
+# Aufgabe: Finde heraus, wo Rudolph steht.
+# Hole dir den Wert aus dem Dictionary, indem du den Namen ("Rudolph") in eckigen Klammern dahinter schreibst.
+
+# wo_ist_rudi = positionen[...]
 
 print(f"Rudolph steht: {wo_ist_rudi}")

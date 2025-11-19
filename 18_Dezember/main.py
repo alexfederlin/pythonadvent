@@ -2,9 +2,14 @@
 
 hunger = 5
 
-while hunger > 0:
+# Aufgabe: Schreibe den Kopf der while-Schleife.
+# Solange hunger größer als 0 ist...
+# while ...:
+
+    # (Erinnerung an Tag 11: f-String!)
     print(f"Habe noch Hunger ({hunger})... Mampf!")
-    # WICHTIG: Hunger muss weniger werden, sonst läuft die Schleife für immer!
-    # hunger = hunger - 1
+    
+    # WICHTIG: Ziehe hier 1 vom Hunger ab!
+    # hunger = ...
 
 print("Pappsatt!")

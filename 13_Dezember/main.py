@@ -1,7 +1,11 @@
 # 🕯️ Tag 13: Listen erstellen
 
-# Erstelle eine Liste mit eckigen Klammern []
-# sack = ["...", "...", "..."]
+# Aufgabe:
+# 1. Erstelle eine Liste 'sack'.
+# 2. Schreibe 3 Geschenke (als Text in Anführungszeichen) hinein, getrennt mit Kommas.
+#    Tipp: sack = ["...", "...", "..."]
+
 
 print("Im Sack ist:")
-print(sack)
+# 3. Gib die Liste aus (einfach print(sack) )
+

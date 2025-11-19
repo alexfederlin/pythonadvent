@@ -5,8 +5,14 @@
 
 Die Geschenke purzeln durcheinander! Wir haben drei Kategorien: "Spielzeug", "Kleidung" und "Süßes".
 
-Deine Aufgabe:
-Nutze `elif` (else if - sonst wenn), um mehr als zwei Möglichkeiten zu prüfen.
+**Erklärung:**
+Wenn wir mehr als zwei Optionen haben (nicht nur Ja/Nein), reicht `if` und `else` nicht.
+Dafür gibt es `elif`. Das ist kurz für "else if" (sonst wenn).
+
+Der Computer prüft von oben nach unten:
+1. `if`... (Trifft das zu? Wenn ja, fertig.)
+2. `elif`... (Wenn das erste nicht zutraf: Trifft das hier zu?)
+3. `else`... (Wenn gar nichts zutraf.)
 
 **Ziel:**
 Erstelle eine Variable `typ`.

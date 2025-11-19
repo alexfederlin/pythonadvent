@@ -4,10 +4,17 @@ geheimnis = "Zimtstern"
 eingabe = ""
 
 # != bedeutet "nicht gleich"
-while eingabe != geheimnis:
-    eingabe = input("Wie lautet das Passwort? ")
+
+# Aufgabe: Schreibe die while-Schleife.
+# Solange 'eingabe' NICHT GLEICH 'geheimnis' ist...
+# (Erinnerung an Tag 18: while ...:)
+
+# while ... != ...:
     
-    if eingabe == geheimnis:
-        print("Zugriff erlaubt! Tor öffnet sich.")
-    else:
-        print("Zugriff verweigert!")
+    # Frage den User nach dem Passwort (input) und speichere es in 'eingabe'
+    
+    # (Optional) Wenn du willst, kannst du prüfen:
+    # Wenn eingabe richtig -> "Offen!"
+    # Sonst -> "Falsch!"
+
+print("Zugriff erlaubt! Tor öffnet sich.")

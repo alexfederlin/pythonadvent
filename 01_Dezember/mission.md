@@ -10,7 +10,9 @@ Hier spricht Oberelf Alabaster. Wir haben ein RIESIGES Problem. Der digitale Wec
 Deine Aufgabe:
 Repariere den Weck-Code. Wir müssen einen Text auf den Bildschirm schreiben, um ihn zu wecken.
 
-Der Befehl dafür ist `print("Dein Text")`.
+**Erklärung:**
+Der Befehl `print(...)` ist wie ein Drucker. Er schreibt das, was in den Klammern steht, auf den Bildschirm.
+Damit der Computer weiß, wo der Text anfängt und aufhört, müssen wir ihn in Anführungszeichen `"..."` packen.
 
 **Ziel:**
 Schreibe ein Programm, das "Hallo Weihnachtsmann! Aufwachen!" ausgibt.

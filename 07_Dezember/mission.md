@@ -5,15 +5,18 @@
 
 Wir müssen entscheiden, wer Geschenke bekommt. Dafür brauchen wir Logik!
 
-Deine Aufgabe:
-Nutze `if` (wenn) und `else` (sonst), um Entscheidungen zu treffen.
+**Erklärung:**
+Das Zauberwort heißt `if` (wenn). Damit kann der Computer Entscheidungen treffen.
+Wichtig sind zwei Dinge:
+1. Der Doppelpunkt `:` am Ende der Zeile.
+2. Das "Einrücken" (Lücke am Anfang der nächsten Zeile). Das zeigt dem Computer, was genau passieren soll, *wenn* die Bedingung stimmt.
 
 Beispiel:
 ```python
 if zahl > 5:
-    print("Groß")
+    print("Groß") # Das hier passiert nur, wenn zahl > 5 ist
 else:
-    print("Klein")
+    print("Klein") # Das passiert sonst
 ```
 
 **Ziel:**
