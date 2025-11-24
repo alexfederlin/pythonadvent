@@ -27,9 +27,7 @@
       "codespaces": {
         "repositories": {
         "alexfederlin/adventskalender2025": {
-          "permissions": {
-            "issues": "write"
-          }
+          "permissions": "write-all"
         }
       }
     }
