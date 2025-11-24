@@ -24,9 +24,9 @@
         "oderwat.indent-rainbow" 
       ]
     },
-        "codespaces": {
-      "repositories": {
-        "my_org/my_repo": {
+      "codespaces": {
+        "repositories": {
+        "alexfederlin/adventskalender2025": {
           "permissions": {
             "issues": "write"
           }
