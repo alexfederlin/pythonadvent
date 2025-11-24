@@ -1,17 +1,20 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/python
 {
-	"name": "Python 3",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/python:2-3.12-bullseye",
-
- // Dieser Befehl wird ausgeführt, NACHDEM der Codespace erstellt wurde.
-  // 1. Er prüft, ob der Ordner 'child_repo' schon existiert.
-  // 2. Wenn nicht, klont er das Kind-Repo über HTTPS.
-  //    In diesem Schritt verwendet Codespaces ZUVERLÄSSIG den internen Token.
+  "name": "Weihnachts-Python",
+  "image": "mcr.microsoft.com/devcontainers/python:3",
+  
+  // Dieser Befehl klont das Kind-Repo über HTTPS.
+  // Die HTTPS-Authentifizierung verwendet den oben konfigurierten Token.
   "postCreateCommand": "if [ ! -d \"child_repo\" ]; then git clone https://github.com/alexfederlin/adventskalender2025.git child_repo; fi",
   
   "customizations": {
+    "codespaces": {
+      "repositories": {
+        "alexfederlin/adventskalender2025": {
+          // 'write-all' für das Pushen der Missionen
+          "permissions": "write-all" 
+        }
+      }
+    },
     "vscode": {
       "settings": {
         "python.defaultInterpreterPath": "/usr/local/bin/python",
@@ -23,29 +26,6 @@
         "ms-python.vscode-pylance",
         "oderwat.indent-rainbow" 
       ]
-    },
-      "codespaces": {
-        "repositories": {
-        "alexfederlin/adventskalender2025": {
-          "permissions": "write-all"
-        }
-      }
     }
-
   }
-
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
-
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
-
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "pip3 install --user -r requirements.txt",
-
-	// Configure tool-specific properties.
-	// "customizations": {},
-
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
 }
