@@ -52,19 +52,29 @@ def publish(day):
     # 6. Git Operationen (Robustere Logik)
     print("⚙️ Bereite Upload vor...")
     
+    # ZWINGT GIT, DEN CODESPACE TOKEN ZU VERWENDEN
+    # Der Full Rebuild hat die Berechtigungen im Token aktualisiert. 
+    # Wir müssen Git jetzt zwingen, DIESEN Token für die HTTPS-Verbindung zu nutzen, 
+    # indem wir den Credential Helper lokal für das Kind-Repo konfigurieren.
+    # Wichtig: 'alexfederlin' ist der Benutzername, $GITHUB_TOKEN ist das Codespace-Passwort.
+    auth_command = "git config credential.helper '!f() { echo \"username=alexfederlin\"; echo \"password=$GITHUB_TOKEN\"; }; f'"
+    print("🛠️ Konfiguriere temporären Codespace-Auth-Token...")
+    run_git_command(auth_command, cwd=TARGET_DIR)
+
     # Add und Commit
     run_git_command("git add .", cwd=TARGET_DIR)
     
-    # Wir versuchen zu committen. Wenn "nichts zu tun ist", ist das auch okay.
-    # Wir prüfen hier nicht strikt auf True/False, damit der Push danach trotzdem läuft.
+    # Wir versuchen zu committen. Wenn "nichts zu tun ist", wird das ignoriert.
     run_git_command(f'git commit -m "Mission Tag {day} freigeschaltet"', cwd=TARGET_DIR, ignore_error=True)
 
-    # IMMER Pushen (Das ist neu: Der Push passiert jetzt unabhängig vom Commit-Erfolg)
+    # IMMER Pushen
     print("🚀 Pushe zum Kind-Repo...")
     if run_git_command("git push", cwd=TARGET_DIR):
         print("✨ Erledigt! Die Mission ist online.")
     else:
-        print("❌ Upload fehlgeschlagen. Hast du 'gh auth login' gemacht?")
+        # Die Fehlermeldung ist jetzt hilfreicher, falls es wirklich an der Codespace-Konfiguration liegt.
+        print("❌ Upload fehlgeschlagen. Es gibt ein Berechtigungsproblem.")
+        print("   -> Die 'devcontainer.json' muss mit dem 'Full Rebuild' wirksam werden.")
 
 if __name__ == "__main__":
     try:
