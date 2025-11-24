@@ -5,7 +5,7 @@ import subprocess
 # KONFIGURATION
 SOURCE_DIR = "." 
 # Das ist der Ordner, in den wir das Repo des Kindes gecloned haben
-TARGET_DIR = "../adventskalender2025"
+TARGET_DIR = "child_repo"
 
 def run_git_command(command, cwd, ignore_error=False):
     try:

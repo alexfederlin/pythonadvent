@@ -23,7 +23,17 @@
         "ms-python.vscode-pylance",
         "oderwat.indent-rainbow" 
       ]
+    },
+        "codespaces": {
+      "repositories": {
+        "my_org/my_repo": {
+          "permissions": {
+            "issues": "write"
+          }
+        }
+      }
     }
+
   }
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
