@@ -1,9 +1,9 @@
 # 🎄 MISSION UPDATE: TAG 2 🎄
 
-**An:** Head of Digital Elves
-**Von:** Oberelf Alabaster, Nordpol IT-Zentrale
-**Datum:** 02. Dezember
-**Status:** Dringendes Update verfügbar
+**An:** Head of Digital Elves  
+**Von:** Oberelf Alabaster, Nordpol IT-Zentrale  
+**Datum:** 02. Dezember  
+**Status:** Dringendes Update verfügbar  
 
 ---
 
@@ -54,6 +54,6 @@ Viel Erfolg!
 
 ---
 **Notfall-Hilfe:**
-Wenn beim Tippen von `git pull` rote Schrift oder "Error" erscheint, rufe sofort den **Senior Admin (Papa/Mama)**!
+Wenn beim Tippen von `git pull` rote Schrift oder "Error" erscheint, rufe sofort den **Senior Admin (Papa)**!
 
 *Ende der Nachricht.*
