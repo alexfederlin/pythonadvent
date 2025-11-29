@@ -14,34 +14,31 @@ Aber: Wir haben ein neues Problem in der Umkleidekabine entdeckt.
 
 Wir haben dir die neuen Missions-Daten über Nacht auf den Nordpol-Server hochgeladen. Aber... sie sind noch nicht auf deinem Computer! Du musst ein manuelles System-Update durchführen.
 
----
+🎄 TÄGLICHE AGENTEN-ROUTINE 
+Bevor du die neue Mission holst, sichere deine Arbeit vom Vortag!
+WICHTIG VOR DEM TIPPEN:Klicke zuerst in das Terminal-Fenster unten im Codespace.
+Du kannst die Pfeil-nach-oben-Taste (↑) drücken, um Befehle vom Vortag schnell wieder zu verwenden!
+➡️ Tippe diesen Befehl:`python speichern.py`
 
-### 📡 Schritt 1: Verbindung herstellen
+Was passiert?
+Deine Lösung wird im Nordpol-Tresor (dein GitHub-Repo) gesichert.
+WICHTIG: Wenn du am Vortag alles richtig gemacht hast, steht als Ausgabe: "Alles gesichert! Es gab keine neuen Änderungen zum Speichern." Das ist ein ERFOLG und bedeutet, du bist bereit für Schritt 2!
 
-1.  Öffne deinen Browser.
-2.  Klicke auf das Lesezeichen **"Nordpol Zentrale"**, das wir gestern gespeichert haben.
-    *(Falls du es nicht findest, musst du nochmal über GitHub gehen wie gestern).*
-3.  Warte, bis dein Codespace komplett geladen ist.
+2. 📡 NEUE MISSION HOLEN (Update)Jetzt holst du die neuen Missionsdateien von Oberelf Alabaster.
+➡️ Tippe diesen Befehl: `git pull upstream main`
 
----
+Was passiert?
+Die Dateien für Tag 2 werden in deinen Codespace geladen.
+AUFPASSEN: Wenn sich jetzt eine neue Datei namens MERGE_MSG öffnet, ist das GUT!
+Das ist nur eine Bestätigung, dass Git die alten und neuen Dateien zusammengeführt hat.
+Mache nichts am Text! Schließe die Datei einfach sofort wieder.
 
-### 📥 Schritt 2: Daten herunterladen (Der "Pull")
+3. ✅ MISSION ERFÜLLEN 
+Löse die neue Aufgabe (z.B. im Ordner 02_Dezember).
+Wenn du fertig bist, gehe zu Schritt 1 und tippe 
+`python speichern.py` (zum letzten Mal für heute).
 
-Schau in die Liste deiner Ordner links. Siehst du den Ordner `02_Dezember`?
-* **Nein?** -> Genau deshalb brauchen wir das Update!
-* **Ja?** -> Wir machen das Update trotzdem, um sicherzugehen, dass wir die neueste Version haben.
-
-Wir benutzen jetzt das Terminal (das schwarze Fenster unten), um den Server anzufunken.
-
-1.  Klicke unten in das **Terminal** (da wo du gestern `python...` eingetippt hast).
-2.  Tippe diesen Befehl exakt ein:
-
-    `git pull`
-
-3.  Drücke die **ENTER**-Taste.
-
-*Der Computer rattert jetzt kurz und zeigt dir Text an. Wenn da steht "Fast-forward" oder "Already up to date", hat es geklappt!*
-
+Viel Erfolg!
 ---
 
 ### 🕵️ Schritt 3: Die neue Mission
