@@ -14,46 +14,49 @@ Aber: Wir haben ein neues Problem in der Umkleidekabine entdeckt.
 
 Wir haben dir die neuen Missions-Daten über Nacht auf den Nordpol-Server hochgeladen. Aber... sie sind noch nicht auf deinem Computer! Du musst ein manuelles System-Update durchführen.
 
-🎄 TÄGLICHE AGENTEN-ROUTINE 
-Bevor du die neue Mission holst, sichere deine Arbeit vom Vortag!
-WICHTIG VOR DEM TIPPEN:Klicke zuerst in das Terminal-Fenster unten im Codespace.
-Du kannst die Pfeil-nach-oben-Taste (↑) drücken, um Befehle vom Vortag schnell wieder zu verwenden!
-➡️ Tippe diesen Befehl:`python speichern.py`
+# 🎄 TÄGLICHE AGENTEN-ROUTINE 🎄
 
-Was passiert?
-Deine Lösung wird im Nordpol-Tresor (dein GitHub-Repo) gesichert.
-WICHTIG: Wenn du am Vortag alles richtig gemacht hast, steht als Ausgabe: "Alles gesichert! Es gab keine neuen Änderungen zum Speichern." Das ist ein ERFOLG und bedeutet, du bist bereit für Schritt 2!
+**Dein Ziel:** Sicherstellen, dass deine Lösung gesichert ist UND die neue Mission holen.
 
-2. 📡 NEUE MISSION HOLEN (Update)Jetzt holst du die neuen Missionsdateien von Oberelf Alabaster.
-➡️ Tippe diesen Befehl: `git pull upstream main`
+## 1. 🚀 MISSION STARTEN (Tägliches Login)
 
-Was passiert?
-Die Dateien für Tag 2 werden in deinen Codespace geladen.
-AUFPASSEN: Wenn sich jetzt eine neue Datei namens MERGE_MSG öffnet, ist das GUT!
-Das ist nur eine Bestätigung, dass Git die alten und neuen Dateien zusammengeführt hat.
-Mache nichts am Text! Schließe die Datei einfach sofort wieder.
+1. Öffne deinen Browser.
 
-3. ✅ MISSION ERFÜLLEN 
-Löse die neue Aufgabe (z.B. im Ordner 02_Dezember).
-Wenn du fertig bist, gehe zu Schritt 1 und tippe 
-`python speichern.py` (zum letzten Mal für heute).
+2. Klicke auf das Lesezeichen **"Nordpol Zentrale"** (oder geh zu deinem Codespace).
 
-Viel Erfolg!
----
+3. Warte, bis dein Codespace komplett geladen ist.
 
-### 🕵️ Schritt 3: Die neue Mission
+## 2. 📡 DATEN HOLEN & SICHERN (Der Schlüssel-Befehl)
 
-Jetzt schau nochmal nach links in die Ordner-Liste.
-Der Ordner **`02_Dezember`** sollte jetzt aufgetaucht sein (oder sich aktualisiert haben).
+Dieser Befehl macht alles: Er speichert deine Lösung vom Vortag und holt die neuen Missions-Dateien.
 
-1.  Öffne **`02_Dezember`**.
-2.  Lies die **`mission.md`**.
-3.  Löse das Rätsel in der **`main.py`**.
+**WICHTIG VOR DEM TIPPEN:**
 
-Viel Erfolg!
+1. Klicke zuerst in das schwarze **Terminal-Fenster** unten im Codespace.
 
----
-**Notfall-Hilfe:**
-Wenn beim Tippen von `git pull` rote Schrift oder "Error" erscheint, rufe sofort den **Senior Admin (Papa)**!
+2. Du kannst die **Pfeil-nach-oben-Taste** (↑) drücken, um den Befehl vom Vortag schnell wieder zu verwenden!
 
+➡️ **Tippe diesen BEFEHL:**
+python mission-control.py
+
+
+**Was passiert?**
+
+1. **Sicherung:** Dein Code wird gesichert und hochgeladen.
+
+2. **Update:** Die neue Mission (Ordner z.B. `02_Dezember`) wird heruntergeladen.
+
+3. **ERFOLG:** Wenn du die Meldung **"MISSIONS-UPDATE ERFOLGREICH!"** siehst, bist du bereit!
+
+## 3. ✅ AUFGABE LÖSEN (Feierabend)
+
+1. Öffne den neuen Ordner und die **`mission.md`**.
+
+2. Löse die Aufgabe.
+
+3. Am Ende des Tages **Speichern nicht vergessen!**
+   Tippe im Terminal erneut:
+   `python mission-control.py`
+
+**Viel Erfolg!**  
 *Ende der Nachricht.*
